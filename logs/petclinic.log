@@ -1,0 +1,40 @@
+2026-06-08 16:32:28.436 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-08 16:32:28.984 INFO  [restartedMain] o.s.s.petclinic.PetClinicApplication - Starting PetClinicApplication using Java 17.0.8 with PID 4564 (C:\Users\Jose Luis\CascadeProjects\spring-petclinic\target\classes started by Jose Luis in C:\Users\Jose Luis\CascadeProjects\spring-petclinic)
+2026-06-08 16:32:29.078 INFO  [restartedMain] o.s.s.petclinic.PetClinicApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 16:32:30.589 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-08 16:32:31.152 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-08 16:32:45.598 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08 16:32:46.051 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 369 ms. Found 3 JPA repository interfaces.
+2026-06-08 16:32:53.930 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-08 16:32:53.991 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-08 16:32:54.000 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 16:32:54.012 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-06-08 16:32:54.406 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 22948 ms
+2026-06-08 16:32:56.024 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 16:33:16.185 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:62a05dd4-0817-4ef4-b553-f5eba9e186c1 user=SA
+2026-06-08 16:33:16.771 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 16:33:18.938 INFO  [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-08 16:33:19.694 INFO  [restartedMain] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-06-08 16:33:27.410 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08 16:33:29.852 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:62a05dd4-0817-4ef4-b553-f5eba9e186c1]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 62A05DD4-0817-4EF4-B553-F5EBA9E186C1/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-08 16:33:41.662 INFO  [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08 16:33:41.714 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08 16:33:42.740 INFO  [restartedMain] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-08 16:33:53.021 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-06-08 16:33:53.609 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-08 16:33:53.811 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-08 16:33:54.110 INFO  [restartedMain] o.s.s.petclinic.PetClinicApplication - Started PetClinicApplication in 89.34 seconds (process running for 94.243)
+2026-06-08 16:36:09.498 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 16:36:09.710 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 16:36:10.171 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
