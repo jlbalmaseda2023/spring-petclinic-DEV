@@ -1,0 +1,58 @@
+Summary,Description,Issue Type
+"HU-01 - Registrar nuevo propietario","Como recepcionista quiero registrar un nuevo propietario con sus datos personales para poder asociarle mascotas y visitas futuras.
+
+Criterios de aceptacion:
+- Nombre, apellido, direccion, ciudad y telefono son obligatorios.
+- El telefono debe ser unico.
+- Se muestra una confirmacion tras el registro.
+
+Nota tecnica (CodeGraph): Telefono tiene @Pattern(regexp=\d{10}) pero NO tiene validacion de unicidad. Bug detectado.",Story
+"HU-02 - Buscar propietario por apellido","Como recepcionista quiero buscar un propietario por su apellido para localizar rapidamente su ficha.
+
+Criterios de aceptacion:
+- Busqueda parcial (contiene apellido).
+- Si hay varios resultados, muestra lista.
+- Si no hay resultados, muestra mensaje informativo.
+
+Nota tecnica (CodeGraph): OwnerRepository ya tiene findByLastNameStartingWith. Funcionalidad probablemente implementada.",Story
+"HU-03 - Registrar mascota de un propietario","Como recepcionista quiero registrar una mascota asociada a un propietario existente para llevar el historial de cada mascota.
+
+Criterios de aceptacion:
+- Nombre, fecha de nacimiento y tipo son obligatorios.
+- No se permite registrar mascotas con nombre vacio.
+- Se valida que el tipo exista en el catalogo.
+
+Nota tecnica (CodeGraph): PetValidator valida nombre, tipo (null) y birthDate. FALTA validacion de que el tipo exista en el catalogo (PetType).",Story
+"HU-04 - Listar veterinarios disponibles","Como recepcionista quiero ver la lista de veterinarios y sus especialidades para asignar la visita al veterinario correcto.
+
+Criterios de aceptacion:
+- Muestra nombre y apellido del veterinario.
+- Muestra especialidades (radiologia, cirugia, odontologia, etc.).
+- Ordenado por apellido.",Story
+"HU-05 - Programar visita para una mascota","Como recepcionista quiero registrar una visita de una mascota a la clinica para llevar el historial medico.
+
+Criterios de aceptacion:
+- Fecha de la visita obligatoria.
+- Descripcion de la visita (motivo, sintomas) obligatoria.
+- Se asocia a una mascota existente.
+- Se puede editar la visita antes de la fecha.",Story
+"HU-06 - Ver historial de visitas de una mascota","Como veterinario quiero ver todas las visitas previas de una mascota para conocer su historial medico antes de atenderla.
+
+Criterios de aceptacion:
+- Muestra fecha y descripcion de cada visita.
+- Ordenado cronologicamente (mas reciente primero).
+- Accesible desde la ficha del propietario.",Story
+"HU-07 - Cache de veterinarios (rendimiento)","Como administrador del sistema quiero que la lista de veterinarios se cachee para reducir consultas a base de datos.
+
+Criterios de aceptacion:
+- Cache activado por defecto.
+- Se invalida cuando se actualizan veterinarios.
+- Tiempo de vida configurable.
+
+Nota tecnica (CodeGraph): @Cacheable ya esta en VetRepository.java:18, NO en VetController. USER_STORIES.md tiene imprecision.",Story
+"HU-08 - Endpoint de salud (monitorizacion)","Como equipo de DevOps quiero un endpoint que indique si la aplicacion esta viva para integrar con sistemas de monitorizacion.
+
+Criterios de aceptacion:
+- GET /actuator/health devuelve estado UP/DOWN.
+- Incluye estado de base de datos.
+- Respuesta rapida (< 100ms).",Story
