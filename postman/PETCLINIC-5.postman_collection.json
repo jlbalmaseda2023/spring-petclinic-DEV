@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Petclinic API - PETCLINIC-5",
+    "description": "Colección Postman generada automáticamente desde los controllers de Spring Boot para probar la historia de usuario.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "VetController",
+      "item": [
+        {
+          "name": "/VETS.HTML showVetList",
+          "request": {
+            "method": "/VETS.HTML",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/showVetList",
+              "host": [
+                "http://localhost:8080"
+              ],
+              "path": [
+                "showVetList"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}
